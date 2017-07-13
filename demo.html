@@ -1,0 +1,114 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Slideshow</title>
+        <style type="text/css">
+h2{
+	color: red;
+}
+pre{
+	padding: 4px;
+	border: #F90 dotted 1px;
+}
+</style>
+        <script type="text/javascript" src="js/jquery-1.3.2.min.js"></script>
+        <script type="text/javascript" src="js/webwidget_slideshow_html5_simple.js"></script>
+        <script language="javascript" type="text/javascript">
+            $(function() {
+                $("#webwidget_slideshow_html5_simple").webwidget_slideshow_html5_simple({
+                    slideshow_transition_effect: 'Mosaic,Wipe_from_horizontal_blind,Wipe_from_vertical_blind,Wipe_from_vertical_center,Wipe_from_horizontal_center,Wipe_to_horizontal_center,Wipe_to_vertical_center,Wipe_from_bottom_to_top,Wipe_from_top_to_bottom,Wipe_from_right_to_left',
+                    slideshow_time_interval: '4000',
+                    slideshow_window_width: '400',
+                    slideshow_window_height: '300',
+                    slideshow_background_color: '#FFF',
+                    slideshow_border: '#999 solid 2px',
+                    text_effect: 'text_fade'
+                });
+            });
+        </script> 
+    </head>
+    
+    <body>
+<h1>canvasSlideshow - html5 canvas image slideshow jQuery plugin</h1>
+<h2>Demo</h2>
+<div id="webwidget_slideshow_html5_simple">
+                        <ul>
+                            <li>
+                                <a href="#" ><img src="images/slideshow_large_1.jpg" alt="Sky" /></a>
+                            </li>
+                            <li>
+                                <img src="images/slideshow_large_2.jpg" alt="Sea" />
+                            </li>
+                            <li>
+                                <a href="#" ><img src="images/slideshow_large_3.jpg" alt="Flower" /></a>
+                            </li>
+                            <li>
+                                <a href="#" ><img src="images/slideshow_large_4.jpg" alt="Tree" /></a>
+                            </li>
+                            <li>
+                                <a href="#" ><img src="images/slideshow_large_1.jpg" alt="Sky" /></a>
+                            </li>
+                            <li>
+                                <a href="#" ><img src="images/slideshow_large_2.jpg" alt="Sea" />
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#" ><img src="images/slideshow_large_3.jpg" alt="Flower" /></a>
+                            </li>
+                            <li>
+                                <a href="#" ><img src="images/slideshow_large_4.jpg" alt="Tree" /></a>
+                            </li><li>
+                                <a href="#" ><img src="images/slideshow_large_1.jpg" alt="Sky" /></a>
+                            </li>
+                            <li>
+                                <a href="#" ><img src="images/slideshow_large_2.jpg" alt="Sea" />
+                                </a>
+                            </li>
+                        </ul>
+    </div>
+                    <h2>Usage</h2>
+<h3>Include js files.</h3>
+<pre>
+&lt;script src=&quot;http://ajax.googleapis.com/ajax/libs/jquery/1.4.0/jquery.min.js&quot;&gt;&lt;/script&gt;<br />&lt;script src=&quot;js/webwidget_slideshow_html5_simple.js&quot;&gt;&lt;/script&gt;
+</pre>
+<h3>Add html.</h3>
+<pre>
+&lt;div id=&quot;webwidget_slideshow_html5_simple&quot;&gt;<br />	&lt;ul&gt;<br />		&lt;li&gt;<br />			&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/slideshow_large_1.jpg&quot; alt=&quot;Sky&quot; /&gt;&lt;/a&gt;<br />		&lt;/li&gt;<br />        &lt;li&gt;<br />			&lt;img src=&quot;images/slideshow_large_2.jpg&quot; alt=&quot;Sea&quot; /&gt;<br />		&lt;/li&gt;<br />		&lt;li&gt;<br />			&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/slideshow_large_3.jpg&quot; alt=&quot;Flower&quot; /&gt;&lt;/a&gt;<br />		&lt;/li&gt;<br />		&lt;li&gt;<br />			&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/slideshow_large_4.jpg&quot; alt=&quot;Tree&quot; /&gt;&lt;/a&gt;<br />		&lt;/li&gt;<br />		&lt;li&gt;<br />			&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/slideshow_large_1.jpg&quot; alt=&quot;Sky&quot; /&gt;&lt;/a&gt;<br />		&lt;/li&gt;<br />		&lt;li&gt;<br />			&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/slideshow_large_2.jpg&quot; alt=&quot;Sea&quot; /&gt;&lt;/a&gt;<br />		&lt;/li&gt;<br />		&lt;li&gt;<br />			&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/slideshow_large_3.jpg&quot; alt=&quot;Flower&quot; /&gt;&lt;/a&gt;<br />		&lt;/li&gt;<br />		&lt;li&gt;<br />			&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/slideshow_large_4.jpg&quot; alt=&quot;Tree&quot; /&gt;&lt;/a&gt;<br />		&lt;/li&gt;<br />        &lt;li&gt;<br />			&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/slideshow_large_1.jpg&quot; alt=&quot;Sky&quot; /&gt;&lt;/a&gt;<br />		&lt;/li&gt;<br />		&lt;li&gt;<br />			&lt;a href=&quot;#&quot;&gt;&lt;img src=&quot;images/slideshow_large_2.jpg&quot; alt=&quot;Sea&quot; /&gt;&lt;/a&gt;<br />		&lt;/li&gt;<br />	&lt;/ul&gt;<br />&lt;/div&gt;
+</pre>
+<h3>Add startup script.</h3>
+<pre>
+&lt;script language=&quot;javascript&quot; type=&quot;text/javascript&quot;&gt;<br />            $(function() {<br />                $(&quot;#webwidget_slideshow_html5_simple&quot;).webwidget_slideshow_html5_simple({<br />                    slideshow_transition_effect: 'Mosaic,Wipe_from_horizontal_blind,Wipe_from_vertical_blind,Wipe_from_vertical_center,Wipe_from_horizontal_center,Wipe_to_horizontal_center,Wipe_to_vertical_center,Wipe_from_bottom_to_top,Wipe_from_top_to_bottom,Wipe_from_right_to_left',<br />                    slideshow_time_interval: '4000',<br />                    slideshow_window_width: '500',<br />                    slideshow_window_height: '400',<br />                    slideshow_background_color: '#FFF',<br />                    slideshow_border: '#999 solid 2px',<br />                    text_effect: 'text_fade'<br />                });<br />            });<br />        &lt;/script&gt;
+</pre>
+<h4>parameter explanatory </h4>
+<table width="600" border="1">
+  <tr>
+    <td>slideshow_transition_effect:</td>
+    <td >each image  transition effect</td>
+  </tr>
+  <tr>
+    <td>slideshow_time_interval:</td>
+    <td>images interval time</td>
+  </tr>
+  <tr>
+    <td>text_effect:</td>
+    <td>    <p>alt=&quot;Sky&quot;<br/><strong>options:</strong>text_nothing text_color text_fade text_jump text_rebound text_typewriter text_whirl text_run text_runin</p></td>
+  </tr>
+</table>
+<pre>
+Copyright 2010 <a href="http://www.htmldrive.net">htmldrive.net</a> Inc.
+
+@projectHomepage: <a href="http://www.htmldrive.net/go/to/canvasSlideshow">http://www.htmldrive.net/go/to/canvasSlideshow</a>
+
+@projectDescription: html5 canvas image slideshow jQuery plugin.
+
+@author: <a href="http://www.htmldrive.net">htmldrive.net</a>
+
+More script and css style : <a href="http://www.htmldrive.net">htmldrive.net</a>
+
+@version 1.0
+
+@license http://www.apache.org/licenses/LICENSE-2.0
+    </pre>
+</body>
+</html>

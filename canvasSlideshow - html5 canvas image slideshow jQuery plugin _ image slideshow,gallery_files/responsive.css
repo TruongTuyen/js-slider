@@ -1,0 +1,13 @@
+@media (max-width: 767px) {
+	#side_right{display: none;}
+	#main {
+	  margin: 10px;
+	  padding: 0;
+	  min-height: 500px;
+	}
+	#side_nav{display: none;}
+	#category-banner{display: none;}
+	#contact_btn{display: none;}
+	#header_ad{display: none;}
+	#nav_block_right{display: none;}
+}
